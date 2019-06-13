@@ -46,6 +46,7 @@ body {
     font: #cccccc;
     clear: both;
     margin-bottom: 10px;
+    margin-bottom: 90px;
 
 }
 
@@ -100,7 +101,7 @@ a:hover {
     width: 100%;
     width: 960px;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 90px;
 }
 
 .main-section {
