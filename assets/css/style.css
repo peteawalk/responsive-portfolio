@@ -41,13 +41,10 @@ body {
 
 .container {
     width: 100%;
-    max-width: 960px;
+    max-width: auto;
     margin: 0 auto;
     font: #cccccc;
-    clear: both;
-    margin-bottom: 10px;
     margin-bottom: 90px;
-
 }
 
 .masthead {
@@ -99,7 +96,7 @@ a:hover {
     padding: 30px;
     margin: 0 auto;
     width: 100%;
-    width: 960px;
+    max-width: 981px;
     border: 1px solid #ddd;
     margin-bottom: 90px;
 }
@@ -109,13 +106,13 @@ a:hover {
     padding: 30px;
     margin: 0 auto;
     width: 100%;
-    width: 960px;
+    max-width: 981px;
     border: 1px solid #ddd;
 }
 
 
 #peterw {
-    width: 250px;
+    max-width: 250px;
     height: 90px;
     background-color: #4aaaa5;
     float: left;
@@ -126,26 +123,26 @@ a:hover {
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
+    padding: 0 10px;
 }
 
 img {
-    width: 100%;
     width: auto;
+    margin-bottom: 10px;
+    width: auto;
+    float: left;
 }
 
 aside {
     float: left;
     width: auto;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 
 #para1 {
     float: left;
-    width: 70%;
     font-size: 18px;
     line-height: 27px;
+    text-align: justify;
 }
 
 #para2 {
@@ -154,7 +151,7 @@ aside {
     font-size: 18px;
     line-height: 27px;
     margin-left: 10px;
-    width: 95%;
+    text-align: justify;
 }
 
 /* portfolio.html properties below: */
@@ -162,7 +159,7 @@ aside {
     clear: both;
     width: 100%;
     /* 100% of 960px below */
-    max-width: 960px;
+    max-width: 981px;
     margin: 0 auto;
     height: 100;
     height: 780px;
@@ -345,7 +342,7 @@ footer {
 
 /* Media Screen: Insert selector or id and values here */
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 979px) {
 
     #main-container,
     .myportfolio,
@@ -367,22 +364,13 @@ footer {
         margin-bottom: 90px;
     }
 
-    #peterw {
-        width: 100%;
-    }
-
     aside,
     #para1 {
         float: none;
         clear: both;
         margin: 0 auto;
         width: 100%;
-    }
-
-    aside>img {
-        float: none;
-        width: 50%;
-        text-align: center;
+        text-align: justify;
     }
 
     nav {
@@ -396,8 +384,6 @@ footer {
         width: 100%;
         text-align: center;
         float: none;
-        display: inline-block;
-        float: none;
         margin: 0 auto;
     }
 
@@ -406,5 +392,196 @@ footer {
         text-align: center;
         float: none;
         margin: 0 auto;
+        overflow: hidden;
     }
+}
+
+@media screen and (max-width: 767px) {
+
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .masthead {
+        margin: 0 auto;
+        background-color: #ffffff;
+        /* Align vertically */
+        overflow: auto;
+        /* Align horizontall centered */
+        border-bottom: 2px solid #cccccc;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        float: right;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+    #peterw {
+        max-width: auto;
+        height: auto;
+        background-color: #4aaaa5;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 4;
+        text-decoration: none;
+        padding: 0 10px;
+        margin: 0 auto;
+        margin-left: 20px;
+    }
+
+    #main-container,
+    .myportfolio {
+        width: 100%;
+        padding: 20px;
+        clear: both;
+        margin: auto;
+        margin-bottom: 120px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+        margin-bottom: 120px;
+        margin: 10px;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    aside {
+        float: left;
+        width: auto;
+    }
+
+    #para1 {
+        float: left;
+        width: 70%;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: justify;
+    }
+
+    #para2 {
+        clear: both;
+        overflow: auto;
+        font-size: 18px;
+        line-height: 27px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+
+    footer {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .masthead {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+
+    nav {
+        float: none;
+        display: inline-block;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #peterw {
+        float: none;
+        display: inline-block;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #main-container,
+    .myportfolio {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        margin: auto;
+        overflow: auto;
+        margin: 15px;
+    }
+
+    .main-container {
+        margin: 15px;
+        margin-left: 15px;
+        width: 100%;
+        margin-bottom: 90px;
+        overflow: auto;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #para1 {
+        clear: both;
+        text-align: justify;
+        width: 100%;
+        float: left;
+    }
+
+    #para2 {
+        clear: both;
+        width: 100%;
+        text-align: justify;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    aside>img {
+        margin: 10px;
+        width: auto;
+        float: left;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100%
+    }
+
 }
