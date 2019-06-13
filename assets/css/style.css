@@ -128,6 +128,11 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    width: auto;
+}
+
 aside {
     float: left;
     width: auto;
@@ -350,7 +355,7 @@ footer {
         float: none;
         clear: both;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 90px;
     }
 
@@ -358,8 +363,12 @@ footer {
         width: 100%;
         margin: 0 auto;
         clear: both;
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 90px;
+    }
+
+    #peterw {
+        width: 100%;
     }
 
     aside,
@@ -392,25 +401,10 @@ footer {
         margin: 0 auto;
     }
 
-    #peterw,
-    img {
-        width: 100%;
-    }
-
     .masthead {
         width: 100%;
         text-align: center;
         float: none;
         margin: 0 auto;
     }
-
-    p,
-    img {
-        clear: both;
-        width: 100%;
-        overflow: auto;
-        float: none;
-        text-align: center;
-    }
-
 }
