@@ -9,28 +9,33 @@
 
 <body>
     <header class="masthead">
-        <h1 id="peterw"> Peter Walker</h1>
-        <ul>
-            <li> <a id="index" href="index.html">About |</a> </li>
-            <li> <a id="portfolio" href="portfolio.html">Portfolio |</a> </li>
-            <li> <a id="contact" href="contact.html">Contact</a> </li>
-        </ul>
+        <div class=container>
+            <a href="index.html" id="peterw">Peter Walker</a>
+            <nav>
+                <a id="about" href="index.html"> About </a>
+                <a id="portfolio" href="portfolio.html"> Portfolio </a>
+                <a id="contact" href="contact.html"> Contact </a>
+            </nav>
+        </div>
     </header>
 
-    <div id="mycontact">
-        <h1 id="contact_header">Contact</h1>
-        <hr>
 
-        <section class="contact-form">
-            <form id="contact-form" method="POST" action="">
-                <span class="form-class">Name</span>
-                <input class="form-class" type="text" name="name" id="name" placeholder="Name" required><br><br>
-                <span class="form-class">Email</span>
-                <input class="form-class" type="email" name="email" id="email" placeholder="Email" required><br><br>
-                <span class="form-class">Message</span>
-                <textarea class="form-class" id="message_area" name="Message" rows="8px" cols="40px"
-                    required></textarea><br>
-                <button class="btn_submit">Submit</button>
+    <div id="main-container" class="container">
+        <section class="main-container">
+            <h1 id="contact_header">Contact</h1>
+
+            <section class="contact-form">
+                <form id="contact-form" method="POST" action="">
+                    <span class="form-class">Name</span>
+                    <input class="form-class" type="text" name="name" id="name" placeholder="Name" required><br><br>
+                    <span class="form-class">Email</span>
+                    <input class="form-class" type="email" name="email" id="email" placeholder="Email" required><br><br>
+                    <span class="form-class">Message</span>
+                    <textarea class="form-class" id="message_area" name="Message" rows="8px" cols="40px"
+                        required></textarea><br>
+                    <button class="btn_submit">Submit</button>
+            </section>
+
         </section>
     </div>
 

@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /* Border and Padding included in total size of div or section */
 }
 
@@ -7,6 +9,26 @@ h1,
 h2,
 h3 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+}
+
+h2,
+h3 {
+    font-size: 22px;
 }
 
 body {
@@ -14,44 +36,46 @@ body {
     background-image: url(../images/email-pattern.png);
     background-repeat: repeat;
     background-color: black;
+    line-height: 34px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0;
-}
+    font: #cccccc;
+    clear: both;
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    word-spacing: 10px;
-    align-items: left;
-}
-
-li a {
-    color: #777777;
-    text-decoration: none;
-    /* Remove underline on link*/
-    word-spacing: 10px;
-    padding: 0 5px 0 0;
-    font-size: 18px;
-    align-items: left;
-}
-
-#peterw {
-    margin: 0px 0px 0px 30px;
-    padding: 18px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    margin-right: 450px;
 }
 
 .masthead {
-    display: flex;
-    /* Align vertically */
-    align-items: center;
-    /* Align horizontall centered */
-    justify-content: center;
+    margin: 0 0 30px;
+    z-index: 100;
     background-color: #ffffff;
+    /* Align vertically */
+    overflow: auto;
+    /* Align horizontall centered */
     border-bottom: 2px solid #cccccc;
     width: 100%;
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    border-left: 2 px solid #999;
+    padding-left: 15px;
+    line-height: 18px;
+}
+
+nav a:first-child {
+    border-left: 0 none;
 }
 
 a,
@@ -67,12 +91,38 @@ a:hover {
     background-color: yellow;
 }
 
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #777777;
-    border: solid 2px #777777;
-    background-color: #777777;
+.main-container {
+    padding-top: 130px;
+    background: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    width: 960px;
+    border: 1px solid #ddd;
+}
+
+.main-section {
+    background: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    width: 100%;
+    width: 960px;
+    border: 1px solid #ddd;
+}
+
+
+#peterw {
+    width: 250px;
+    height: 90px;
+    background-color: #4aaaa5;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 90px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 aside {
@@ -99,41 +149,19 @@ aside {
     width: 95%;
 }
 
-#aboutme,
-#mycontact {
-    clear: both;
-    overflow: auto;
-    /* 100% of 960px below */
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    font-size: 18px;
-    background-color: #ffffff;
-    border: 1px solid #140101;
-    height: 500px;
-    margin-top: 50px;
-    position: relative;
-    top: 120px;
-}
-
 /* portfolio.html properties below: */
 .myportfolio {
     clear: both;
-    overflow: auto;
     width: 100%;
     /* 100% of 960px below */
     max-width: 960px;
     margin: 0 auto;
-    height: 700px;
+    height: 100;
+    height: 780px;
     font-size: 18px;
-    border: 1px solid #140101;
     background-color: #ffffff;
     position: relative;
-    margin-top: 50px;
-}
-
-.imagecontainer {
-    margin: 0 auto;
+    margin-top: 30px;
 }
 
 #image1 {
@@ -271,7 +299,7 @@ form {
 .form-class {
     margin-left: 10px;
     margin-right: 10px;
-    width: 96%;
+    width: 100%;
     font-size: 16px;
     padding: 2px;
 }
@@ -304,26 +332,56 @@ footer {
     padding: 12px;
 }
 
-/* Media Screen: Insert class or id and values here */
-@media screen and (max-width: 550px) {
-    .masthead {
-        float: left;
+/* Media Screen: Insert selector or id and values here */
+
+@media screen and (max-width: 960px) {
+
+    #main-container {
+        width: 100%;
+        padding: 20px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+        overflow: auto;
+    }
+
+    nav {
+        float: none;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        float: none;
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
     }
 
     #peterw {
         width: 100%;
+    }
+
+    .masthead {
+        width: 100%;
+        text-align: center;
+        float: none;
         margin: 0 auto;
-        display: block;
     }
 
-    ul li {
-        display: inline-block;
-        float: left;
-        width: 100%;
+    p,
+    img {
+        overflow: auto;
+        float: none;
+        text-justify: left;
     }
 
-    li a {
-        display: inline-block;
-        width: 100%;
-    }
 }
