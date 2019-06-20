@@ -48,8 +48,7 @@ body {
 }
 
 .masthead {
-    margin: 0 0 30px;
-    z-index: 100;
+    margin: 0 auto;
     background-color: #ffffff;
     /* Align vertically */
     overflow: auto;
@@ -61,6 +60,9 @@ body {
 nav {
     float: right;
     margin-top: 25px;
+    margin-right: 130px;
+    width: auto;
+
 }
 
 nav a {
@@ -110,7 +112,6 @@ a:hover {
     border: 1px solid #ddd;
 }
 
-
 #peterw {
     max-width: 250px;
     height: 90px;
@@ -124,22 +125,18 @@ a:hover {
     font-size: 30px;
     text-decoration: none;
     padding: 0 10px;
+    margin: 0 auto;
 }
 
-img {
-    width: auto;
+aside>img {
+    float: left;
+    max-width: 200px;
     margin-bottom: 10px;
-    width: auto;
-    float: left;
-}
-
-aside {
-    float: left;
-    width: auto;
 }
 
 #para1 {
     float: left;
+    width: auto;
     font-size: 18px;
     line-height: 27px;
     text-align: justify;
@@ -187,8 +184,8 @@ aside {
     background-color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
-    left: 18px;
-    top: 100px;
+    left: 35px;
+    top: 120px;
 }
 
 #image2 {
@@ -210,7 +207,7 @@ aside {
     font-size: 18px;
     font-weight: bold;
     left: 28px;
-    top: 100px;
+    top: 120px;
 }
 
 
@@ -233,7 +230,7 @@ aside {
     font-size: 18px;
     font-weight: bold;
     left: 24px;
-    top: 100px;
+    top: 120px;
 }
 
 #image4 {
@@ -255,7 +252,7 @@ aside {
     font-size: 18px;
     font-weight: bold;
     left: 8px;
-    top: 100px;
+    top: 120px;
 }
 
 #image5 {
@@ -276,7 +273,7 @@ aside {
     font-size: 18px;
     font-weight: bold;
     left: 30px;
-    top: 100px;
+    top: 120px;
     padding: 0 20px;
 }
 
@@ -342,7 +339,7 @@ footer {
 
 /* Media Screen: Insert selector or id and values here */
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 980px) {
 
     #main-container,
     .myportfolio,
@@ -396,7 +393,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     * {
         margin: 0px;
