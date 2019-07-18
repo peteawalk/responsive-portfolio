@@ -364,13 +364,11 @@ footer {
         margin-bottom: 90px;
     }
 
-    aside,
-    #para1 {
-        float: none;
-        clear: both;
+    aside {
+        max-width: 100%;
+        width: 80%;
+        text-align: center;
         margin: 0 auto;
-        width: 100%;
-        text-align: justify;
     }
 
     nav {
@@ -471,8 +469,10 @@ footer {
     }
 
     aside {
-        float: left;
-        width: auto;
+        max-width: 100%;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     #para1 {
@@ -533,17 +533,18 @@ footer {
         width: 100%;
         margin: 0 auto;
         margin-bottom: 90px;
-        margin: auto;
         overflow: auto;
-        margin: 15px;
     }
 
     .main-container {
-        margin: 15px;
-        margin-left: 15px;
+        margin: 0 auto;
         width: 100%;
         margin-bottom: 90px;
         overflow: auto;
+    }
+
+    .form-class {
+        margin: 0 auto;
     }
 
     .container {
@@ -553,15 +554,12 @@ footer {
     }
 
     #para1 {
-        clear: both;
         text-align: justify;
-        width: 100%;
-        float: left;
+        width: 98%;
     }
 
     #para2 {
-        clear: both;
-        width: 100%;
+        width: 98%;
         text-align: justify;
     }
 
@@ -570,12 +568,9 @@ footer {
         width: 100%;
     }
 
-    aside>img {
-        margin: 10px;
-        width: auto;
-        float: left;
-        width: 100%;
-        margin-right: 10px;
+    aside {
+        max-width: 100%;
+        width: 80%;
         text-align: center;
         margin: 0 auto;
     }
