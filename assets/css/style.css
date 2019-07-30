@@ -20,10 +20,11 @@ p {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 49px;
     border-bottom: 3px solid #ddd;
     padding-bottom: 20px;
+    font-family: 'Crimson Text', serif;
 }
 
 h2,
@@ -118,12 +119,12 @@ a:hover {
     height: 90px;
     background-color: #4aaaa5;
     float: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-family: 'Crimson Text', serif;
     text-align: center;
     line-height: 90px;
     color: #ffffff;
     font-weight: 700;
-    font-size: 30px;
     text-decoration: none;
     padding: 0 10px;
     margin: 0 auto;
@@ -165,7 +166,6 @@ aside {
     font-size: 18px;
     background-color: #ffffff;
     position: relative;
-    margin-top: 30px;
 }
 
 #image1 {
@@ -186,8 +186,9 @@ aside {
     background-color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
-    left: 35px;
+    left: 45px;
     top: 120px;
+    padding: 0 5px;
 }
 
 #image2 {
@@ -208,8 +209,9 @@ aside {
     background-color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
-    left: 28px;
+    left: 12px;
     top: 120px;
+    padding: 0 5px;
 }
 
 
@@ -231,8 +233,9 @@ aside {
     background-color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
-    left: 24px;
+    left: 15px;
     top: 120px;
+    padding: 0 5px;
 }
 
 #image4 {
@@ -253,8 +256,9 @@ aside {
     background-color: #4aaaa5;
     font-size: 18px;
     font-weight: bold;
-    left: 8px;
+    left: 15px;
     top: 120px;
+    padding: 0 5px;
 }
 
 #image5 {
@@ -276,7 +280,7 @@ aside {
     font-weight: bold;
     left: 30px;
     top: 120px;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 /* contact.html properties below: */
@@ -293,7 +297,6 @@ aside {
 #contact_header {
     color: #4aaaa5;
     margin-left: 20px;
-    font-size: 2em;
     margin-bottom: 10px;
 }
 
@@ -347,7 +350,7 @@ footer {
     #main-container,
     .myportfolio,
     p {
-        width: 100%;
+        max-width: 100%;
         padding: 20px;
         float: none;
         clear: both;
@@ -391,109 +394,6 @@ footer {
         float: none;
         margin: 0 auto;
         overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    * {
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    .masthead {
-        margin: 0 auto;
-        background-color: #ffffff;
-        /* Align vertically */
-        overflow: auto;
-        /* Align horizontall centered */
-        border-bottom: 2px solid #cccccc;
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    nav {
-        float: right;
-        margin-top: 30px;
-        margin-right: 10px;
-    }
-
-    #peterw {
-        max-width: auto;
-        height: auto;
-        background-color: #4aaaa5;
-        float: left;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 4;
-        text-decoration: none;
-        padding: 0 10px;
-        margin: 0 auto;
-        margin-left: 20px;
-    }
-
-    #main-container,
-    .myportfolio {
-        width: 100%;
-        padding: 20px;
-        clear: both;
-        margin: auto;
-        margin-bottom: 120px;
-        margin: 10px;
-        margin: 0 auto;
-    }
-
-    .main-container {
-        width: 100%;
-        margin: 0 auto;
-        clear: both;
-        margin-bottom: 120px;
-        margin: 10px;
-    }
-
-    .container {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 120px;
-    }
-
-    img {
-        width: 100%;
-        margin-bottom: 10px;
-        width: auto;
-    }
-
-    aside {
-        max-width: 100%;
-        width: 80%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #para1 {
-        float: left;
-        width: 70%;
-        font-size: 18px;
-        line-height: 27px;
-        text-align: justify;
-    }
-
-    #para2 {
-        clear: both;
-        overflow: auto;
-        font-size: 18px;
-        line-height: 27px;
-        margin-left: 10px;
-        text-align: justify;
-    }
-
-    footer {
-        width: 100%
     }
 }
 
