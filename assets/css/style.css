@@ -24,7 +24,7 @@ h1 {
     line-height: 49px;
     border-bottom: 3px solid #ddd;
     padding-bottom: 20px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Saira Stencil One', cursive;
 }
 
 h2,
@@ -33,7 +33,7 @@ h3 {
 }
 
 body {
-    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    font-family: 'Roboto Mono', monospace;
     background-image: url(../images/email-pattern.png);
     background-repeat: repeat;
     background-color: black;
@@ -115,12 +115,12 @@ a:hover {
 }
 
 #peterw {
-    max-width: 250px;
+    max-width: 350px;
     height: 90px;
     background-color: #4aaaa5;
     float: left;
     font-size: 40px;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Saira Stencil One', cursive;
     text-align: center;
     line-height: 90px;
     color: #ffffff;

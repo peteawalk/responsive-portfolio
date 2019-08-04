@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact me!</title>
+    <title>peterwalker.dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
@@ -21,29 +23,44 @@
         </div>
     </header>
 
-
     <div id="main-container" class="container">
-        <section class="main-container">
+        <div class="main-container">
             <h1 id="contact_header">Contact</h1>
 
-            <section class="contact-form">
-                <form id="contact-form" method="POST" action="">
-                    <span class="form-class">Name</span>
-                    <input class="form-class" type="text" name="name" id="name" placeholder="Johnny Twohands"
-                        required><br>
-                    <span class="form-class">Email</span>
-                    <input class="form-class" type="email" name="email" id="email" placeholder="johnny2hands@email.com"
-                        required><br>
-                    <span class="form-class">Message</span>
-                    <textarea class="form-class" id="message_area" name="Message" rows="8px" cols="40px"
-                        required></textarea><br>
-                    <button class="btn_submit">Submit</button>
-            </section>
-        </section>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bg-light">
+                        <div class="card-body">
+
+                            <div class="form-group">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="name">Name</label>
+                                        <input class="form-control" id="name" type="text" placeholder="Johnny Twohands"
+                                            required>
+
+
+                                        <div class="form-group row">
+                                            <label for="email">Email</label>
+                                            <input class="form-control" id="email" type="text"
+                                                placeholder="johnny2hands@email.com" required>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="message_area">Message</label>
+                                            <texarea class="form-control" id="message_area" rows="3"></textarea>
+                                        </div>
+                                        <button class="btn btn-primary float-left" id="submitBtn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>&copy; 2019 Peter Walker</footer>
-
 </body>
 
 </html>
