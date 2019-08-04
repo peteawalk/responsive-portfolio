@@ -14,26 +14,13 @@ h1 {
 body {
     font-family: 'Roboto Mono', monospace;
     line-height: 34px;
-}
-
-#peterw {
-    max-width: 350px;
-    height: 90px;
-    font-size: 40px;
-    font-family: 'Saira Stencil One', cursive;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 0 10px;
-}
-
-body {
     padding-top: 3rem;
+    font-size: 16px;
 }
 
 .hero {
     padding: 1vh 0;
     background: linear-gradient(to right, #004225, #41FFAB);
-    /* #41ffab */
 }
 
 .portfolio {
@@ -45,17 +32,10 @@ body {
 
 .contact {
     padding: 10vh 0;
-    text-align: center;
-}
-
-.featured-price {
-    transform: scale(1.1);
-    z-index: 10;
-    background: #222;
 }
 
 footer {
-    padding: 10vh 0;
+    padding: 5vh 0;
     text-align: center;
     background: #000;
     color: #FFF;
