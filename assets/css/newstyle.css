@@ -1,4 +1,3 @@
-h1,
 h2,
 h3 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
@@ -60,8 +59,4 @@ footer {
     text-align: center;
     background: #000;
     color: #FFF;
-}
-
-@media (min-width: 768px) {
-    /* padding: 10vh 0; */
 }
