@@ -6,7 +6,7 @@ $(document).ready(function () {
         event.preventDefault();
         $("body, html").animate({
             scrollTop: $(this.hash).offset().top // How far away the secton is from top of page
-        }, 1000); //duration = 1000 msec
+        }, 1500); //duration = 1000 msec
 
     });
 
