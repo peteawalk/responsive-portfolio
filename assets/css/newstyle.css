@@ -24,7 +24,14 @@ a:hover {
     text-decoration: none;
 }
 
-.customnav {
+.customnav,
+.navbar-toggler,
+.collapse {
+    color: #FFD700;
+    background: #000;
+}
+
+.navbar-toggler-icon {
     color: #FFD700;
     background: #000;
 }
