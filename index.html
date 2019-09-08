@@ -12,11 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src=" assets/javascript/application.js"></script>
+    <!-- local CSS -->
     <link rel="stylesheet" href="assets/css/newstyle.css">
 </head>
 
@@ -30,13 +26,13 @@
                 </button>
                 <div class="collapse navbar-collapse scroll" id="navbarNav">
                     <ul class="navbar-nav">
-                        <a class="nav-link scroll" href="#top">
-                            <li class="nav-item active">About</li>
+                        <a class="nav-link" href="#top">
+                            <li class="nav-item">About</li>
                         </a>
-                        <a class="nav-link scroll" href="#portfolio">
+                        <a class="nav-link" href="#portfolio">
                             <li class="nav-item">Portfolio</li>
                         </a>
-                        <a class="nav-link scroll" href="#contact">
+                        <a class="nav-link" href="#contact">
                             <li class="nav-item">Comms</li>
                         </a>
                     </ul>
@@ -89,6 +85,29 @@
             <h1 class="mb-5 display-4">Portfolio</h1>
             <div class="row">
                 <div class="col-md-4">
+                    <h3>FriendFinder</h3>
+                    <a href="https://github.com/peteawalk/FriendFinder" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/images/morganic.png" width="220px" height="160px"
+                            alt="Screenshot of FriendFinder web app"></a>
+                    <p>FriendFinder - find a date or a friend. Or both?</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Bamazon</h3>
+                    <a href="https://github.com/peteawalk/bamazon" target="_blank"
+                        rel="noopener noreferrer"><img src="assets/images/trainScheduler.png" width="220px"
+                            height="160px" alt="Gif of Bamazon node app"></a>
+                    <p>An Amazonesque storefront. Utilize the command line to view inventory, track inventory, make a purchase, etc.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>LIRI</h3>
+                    <a href="https://github.com/peteawalk/bot_LIRI" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/images/WTG.png" width="220px" height="160px"
+                            alt="Gif of LIRI node app"></a>
+                    <p>A node.JS based imitation SIRI. Not a creepy easedropping search tool.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
                     <h3>MORganic</h3>
                     <a href="https://peteawalk.github.io/MORganic/" target="_blank" rel="noopener noreferrer"><img
                             src="assets/images/morganic.png" width="220px" height="160px"
@@ -123,6 +142,23 @@
         <div class="container">
             <h1 class="mb-5 display-4">Contact Me</h1>
             <div class="row">
+                <div class="col-md-6">
+
+                <a href="mailto:peteawalk@gmail.com?subject=Hey Peter!&body=Hey Peter, love the portfolio..." target="_blank"
+                rel="noopener noreferrer"><i class=" fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="https://github.com/peteawalk" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt"
+                aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/peteawalk/" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="assets/documents/peterwalker_resume.pdf" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-download" aria-hidden="true">CV</i></a>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- <div class="row">
                 <div class="col-md-12">
                     <div class="card bg-light">
                         <div class="card-body">
@@ -147,26 +183,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div> -->
 
-    <footer>
-        <a href="https://github.com/peteawalk" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt"
-                aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/peteawalk/" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="assets/documents/peterwalker_resume.pdf" target="_blank" rel="noopener noreferrer"><i
-                class="fa fa-download" aria-hidden="true">CV</i></a>
-        <a href="mailto:peteawalk@gmail.com?subject=Hey Peter!&body=Hey Peter, love the portfolio..." target="_blank"
-            rel="noopener noreferrer"><i class=" fa fa-envelope-o" aria-hidden="true"></i></a>
-        <br>
-        &copy; 2019 Peter Walker
-    </footer>
+    <footer> &copy;2019 Peter Walker </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/application.js"></script>
 </body>
 
 </html>
