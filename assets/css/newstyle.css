@@ -28,19 +28,11 @@ a:hover {
     color: #41FFAB;
 }
 
-button {
-    color: #FFD700;
-    background: #000;
-}
-
 .customnav,
 .navbar-toggler,
-.collapse {
-    color: #FFD700;
-    background: #000;
-}
-
+.collapse,
 .navbar-toggler-icon {
+    font-size: 1.2rem;
     color: #FFD700;
     background: #000;
 }
@@ -75,6 +67,7 @@ img,
     background: #222;
     color: #FFF;
     text-align: center;
+    margin-bottom: 1vh 0;
 }
 
 .portfolio-images {
@@ -95,7 +88,7 @@ img,
     border: none;
 }
 
-.fa {
+.contacticons {
     padding: 3vh 3vh;
     margin: 5px;
     border: 2px solid;
